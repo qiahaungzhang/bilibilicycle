@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>骑行故事-骑生活</title>
+
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="css/journey_fenye.css" rel="stylesheet" />
+</head>
+<body>
+	<!-- 1 -->
+	<div class="row">
+		<div class="container journeybufen">
+			<div class="col-sm-9">
+				<div class="col-sm-12" style="padding-top: 20px; margin-top: 20px;">
+					<!-- 顶部分页 -->
+					<div class="col-sm-5" style="padding-bottom: 0px;">
+						<a class="btn btn-default" href="#" role="button">1</a>
+						<button class="btn btn-default" type="submit">2</button>
+						<input class="btn btn-default" type="button" value="3"> <input
+							class="btn btn-default" type="submit" value="4"> <input
+							class="btn btn-default" type="submit" value="...120">
+					</div>
+					<div class="col-sm-3" id="top_fenye" style="margin-left: -110px;">
+						<input type="text" style="width: 52px;" class="form-control"
+							placeholder="1"> <span>/120</span> <input
+							class="btn btn-default" type="submit" value="下一页">
+					</div>
+					<div class="col-sm-3"></div>
+
+					<!-- 我要发帖 -->
+					<div class="col-sm-1">
+						<button style="width: 100px;" type="button" class="btn btn-danger">我要发帖</button>
+					</div>
+				</div>
+
+
+				<div class="col-sm-12" style="height: 100px; padding-top: 16px;">
+					<div class="col-sm-12"
+						style="width: 100%; height: 1px; border: solid white 1px;"></div>
+
+					<!-- 全部时间下拉菜单 -->
+					<div class="col-sm-1 btn-group" style="margin-top: 40px;">
+						<button type="button" id="drop"
+							class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">
+							全部时间 <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a href="#">一天</a></li>
+							<li><a href="#">两天</a></li>
+							<li><a href="#">一周</a></li>
+							<li><a href="#">一个月</a></li>
+							<li><a href="#">三个月</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-1"></div>
+
+					<!-- 默认排序下拉菜单 -->
+					<div class="col-sm-1 btn-group" style="margin-top: 40px;">
+						<button type="button" id="drop"
+							class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">
+							默认排序<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a href="#">发帖时间</a></li>
+							<li><a href="#">回复数</a></li>
+							<li><a href="#">查看数</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-4" style=""></div>
+					<div class="col-sm-5"
+						style="margin-top: 40px; padding-left: 100px;">
+						<ol class="breadcrumb">
+							<li><a href="#">最新</a></li>
+							<li><a href="#">热门</a></li>
+							<li><a href="#">热帖</a></li>
+							<li><a href="#">精华</a></li>
+						</ol>
+					</div>
+				</div>
+
+				<!-- 正文1 -->
+				<div class="col-sm-12" id="users" style="z-index: 20;">
+					<!-- photos of users -->
+					<div class="col-sm-1" id="pic">
+
+						<!-- 弹出框 联系人详细信息 -->
+						<img src="images/8b85b.jpg" style="position: relative;"
+							id="group_1" />
+						<div id="content_1" class="s1"
+							style="position: absolute; height: 170px; width: 280px; margin-top: 6px; background-color: white;">
+							<div class="col-sm-4" style="margin-top: 20px;">
+								<img style="height: 60px; width: 60px; border-radius: 60px;"
+									src="images/8b85b.jpg" />
+							</div>
+							<div class="col-sm-8" style="margin-top: 20px;">
+								<p style="font-size: 14px; font-weight: bold;">回忆很美</p>
+								<p style="font-size: 10px;">
+									积分144<br />离线
+								</p>
+							</div>
+							<div class="col-sm-12" style="margin-top: 20px;"></div>
+							<div class="col-sm-12" style="margin-top: 6px;">
+								<input
+									style="height: 26px; width: 60px; padding-top: 4px; padding-left: 8px;"
+									class="btn btn-default" type="button" value="加好友"> <input
+									style="height: 26px; width: 60px; padding-top: 4px; padding-left: 8px;"
+									class="btn btn-default" type="submit" value="发消息"> <input
+									style="height: 26px; width: 60px; padding-top: 4px; padding-left: 8px;"
+									class="btn btn-default" type="submit" value="打招呼">
+							</div>
+						</div>
+					</div>
+
+					<!-- names of users -->
+					<div class="col-sm-2" id="username">
+						<span class="glyphicon glyphicon-book"
+							style="font-size: 20px; color: #a09e9e; margin-top: 14px; padding-left: 5px;"></span>
+						<p style="font-size: 10px; margin-top: 10px;">
+							<a href="">回忆很美</a>
+						</p>
+					</div>
+
+					<!-- content of users -->
+					<div class="col-sm-7" id="content">
+						<div class="col-sm-12">
+							<p>
+								<a href="">海马单骑环游中国第501天，沿河轻松过永新，翻山越岭井冈山</a>
+							</p>
+						</div>
+						<div class="col-sm-12">
+							<span style="font-size: 10px; color: #a09e9e;"
+								class="glyphicon glyphicon-time"> 2016-08-10 10:01 发表 |
+								落雁 于2016-08-10 12:14:16 参与讨论</span>
+						</div>
+					</div>
+					<div class="col-sm-1" style="margin-top: 6px; margin-left: 40px;">
+						<span class="glyphicon glyphicon-fire text-center"
+							style="color: rgb(217, 83, 79); font-size: 20px;"></span>
+					</div>
+
+
+					<!-- 阅读和评论数目的小图标 -->
+					<div class="col-sm-2"
+						style="margin-left: 54px; padding-left: 32px; padding-top: 10px;">
+						<span style="font-size: 14px; color: #a09e9e; margin-right: 10px;"
+							class="glyphicon glyphicon-eye-open"><span
+							style="font-size: 14px; color: #a09e9e;">120</span></span> <span
+							style="font-size: 14px; color: #a09e9e;"
+							class="glyphicon glyphicon-comment"><span
+							style="font-size: 14px; color: #a09e9e;">23</span></span>
+					</div>
+
+					<!-- 白色分割线 -->
+
+
+				</div>
+
+				<!-- 正文内容2 -->
+				<div class="col-sm-12" id="users" style="z-index: 19;">
+					<!-- photos of users -->
+					<div class="col-sm-1" id="pic">
+
+						<!-- 弹出框 联系人详细信息 -->
+						<img src="images/03.jpg" style="position: relative;" id="group_2" />
+						<div id="content_2" class="s2"
+							style="position: absolute; height: 170px; width: 280px; margin-top: 6px; background-color: white;">
+							<div class="col-sm-4" style="margin-top: 20px;">
+								<img style="height: 60px; width: 60px; border-radius: 60px;"
+									src="images/03.jpg" />
+							</div>
+							<div class="col-sm-8" style="margin-top: 20px;">
+								<p style="font-size: 14px; font-weight: bold;">殇离别</p>
+								<p style="font-size: 10px;">
+									积分44<br />在线
+								</p>
+							</div>
+							<div class="col-sm-12"
+								style="border: solid #f7f7f7 1px; margin-top: 20px;"></div>
+							<div class="col-sm-12" style="margin-top: 6px;">
+								<input
+									style="height: 26px; width: 60px; padding-top: 4px; padding-left: 8px;"
+									class="btn btn-default" type="button" value="加好友"> <input
+									style="height: 26px; width: 60px; padding-top: 4px; padding-left: 8px;"
+									class="btn btn-default" type="submit" value="发消息"> <input
+									style="height: 26px; width: 60px; padding-top: 4px; padding-left: 8px;"
+									class="btn btn-default" type="submit" value="打招呼">
+							</div>
+						</div>
+					</div>
+
+					<!-- names of users -->
+					<div class="col-sm-2" id="username">
+						<span class="glyphicon glyphicon-book"
+							style="font-size: 20px; color: #a09e9e; margin-top: 14px; padding-left: 5px;"></span>
+						<p style="font-size: 10px; margin-top: 10px;">
+							<a href="">殇离别</a>
+						</p>
+					</div>
+
+					<!-- content of users -->
+					<div class="col-sm-7" id="content">
+						<div class="col-sm-12">
+							<p>
+								<a href="">我的《车之梦》（手机摄影）</a>
+							</p>
+						</div>
+						<div class="col-sm-12">
+							<span style="font-size: 10px; color: #a09e9e;"
+								class="glyphicon glyphicon-time"> 2016-08-10 10:11 发表 |
+								落雁 于2016-08-10 12:16:16 参与讨论</span>
+						</div>
+					</div>
+					<div class="col-sm-1"
+						style="margin-top: 11px; margin-left: -202px;">
+						<p class="text-center"
+							style="height: 16px; width: 30px; background-color: rgb(217, 83, 79); font-size: 10px; color: white">置顶</p>
+					</div>
+
+
+					<!-- 阅读和评论数目的小图标 -->
+					<div class="col-sm-2"
+						style="margin-left: 54px; padding-left: 32px; padding-top: 30px;">
+						<span style="font-size: 14px; color: #a09e9e; margin-right: 10px;"
+							class="glyphicon glyphicon-eye-open"><span
+							style="font-size: 14px; color: #a09e9e;">120</span></span> <span
+							style="font-size: 14px; color: #a09e9e;"
+							class="glyphicon glyphicon-comment"><span
+							style="font-size: 14px; color: #a09e9e;">23</span></span>
+					</div>
+
+					<!-- 白色分割线 -->
+
+
+				</div>
+
+				<!-- 正文3 -->
+				<div class="col-sm-12" id="users" style="">
+					<!-- photos of users -->
+					<div class="col-sm-1" id="pic">
+
+						<!-- 弹出框 联系人详细信息 -->
+						<img src="images/126.jpg" id="group_1" />
+					</div>
+
+					<!-- names of users -->
+					<div class="col-sm-2" id="username">
+						<span class="glyphicon glyphicon-book"
+							style="font-size: 20px; color: #a09e9e; margin-top: 14px; padding-left: 5px;"></span>
+						<p style="font-size: 10px; margin-top: 10px;">
+							<a href="">城外人</a>
+						</p>
+					</div>
+
+					<!-- content of users -->
+					<div class="col-sm-7" id="content">
+						<div class="col-sm-12" style="width: 270px;">
+							<p>
+								<a href="">小白旅行最后一天,到达济南</a>
+							</p>
+						</div>
+						<div class="col-sm-12">
+							<span style="font-size: 11px; color: #a09e9e;"
+								class="glyphicon glyphicon-time"> 2016-08-10 10:33 发表 |
+								兔子 于2016-08-10 13:14:16 参与讨论</span>
+						</div>
+					</div>
+					<div class="col-sm-1"
+						style="margin-top: 10px; margin-left: -204px;">
+						<p class="text-center"
+							style="height: 16px; width: 30px; background-color: rgb(217, 83, 79); font-size: 10px; color: white">置顶</p>
+					</div>
+
+
+					<!-- 阅读和评论数目的小图标 -->
+					<div class="col-sm-2"
+						style="margin-left: 54px; padding-left: 32px; padding-top: 30px;">
+						<span style="font-size: 14px; color: #a09e9e; margin-right: 10px;"
+							class="glyphicon glyphicon-eye-open"><span
+							style="font-size: 14px; color: #a09e9e;">120</span></span> <span
+							style="font-size: 14px; color: #a09e9e;"
+							class="glyphicon glyphicon-comment"><span
+							style="font-size: 14px; color: #a09e9e;">23</span></span>
+					</div>
+
+					<!-- 白色分割线 -->
+
+
+				</div>
+
+				<!-- 正文4 -->
+				<div class="col-sm-12" id="users" style="">
+					<!-- photos of users -->
+					<div class="col-sm-1" id="pic">
+
+						<!-- 弹出框 联系人详细信息 -->
+						<img src="images/140-141.jpg" />
+					</div>
+
+					<!-- names of users -->
+					<div class="col-sm-2" id="username">
+						<span class="glyphicon glyphicon-book"
+							style="font-size: 20px; color: #a09e9e; margin-top: 14px; padding-left: 5px;"></span>
+						<p style="font-size: 10px; margin-top: 10px;">
+							<a href="">兔子</a>
+						</p>
+					</div>
+
+					<!-- content of users -->
+					<div class="col-sm-7" id="content">
+						<div class="col-sm-12">
+							<p>
+								<a href="">在草原最美的季节，游荡在川西北甘南青海的大草原</a>
+							</p>
+						</div>
+						<div class="col-sm-12">
+							<span style="font-size: 10px; color: #a09e9e;"
+								class="glyphicon glyphicon-time"> 2016-08-10 11:01 发表
+								|竹根7 于2016-08-10 13:14:20 参与讨论</span>
+						</div>
+					</div>
+
+					<!-- 阅读和评论数目的小图标 -->
+					<div class="col-sm-2"
+						style="margin-left: 56px; padding-left: 32px; padding-top: 46px;">
+						<span style="font-size: 14px; color: #a09e9e; margin-right: 10px;"
+							class="glyphicon glyphicon-eye-open"><span
+							style="font-size: 14px; color: #a09e9e;">125</span></span> <span
+							style="font-size: 14px; color: #a09e9e;"
+							class="glyphicon glyphicon-comment"><span
+							style="font-size: 14px; color: #a09e9e;">24</span></span>
+					</div>
+
+					<!-- 白色分割线 -->
+
+				</div>
+
+				<!-- 正文5 -->
+				<div class="col-sm-12" id="users" style="">
+					<!-- photos of users -->
+					<div class="col-sm-1" id="pic">
+						<img src="images/199.jpg" />
+					</div>
+
+					<!-- names of users -->
+					<div class="col-sm-2" id="username">
+						<span class="glyphicon glyphicon-book"
+							style="font-size: 20px; color: #a09e9e; margin-top: 14px; padding-left: 5px;"></span>
+						<p style="font-size: 10px; margin-top: 10px;">
+							<a href="">海岸驾驶者</a>
+						</p>
+					</div>
+
+					<!-- content of users -->
+					<div class="col-sm-7" id="content">
+						<div class="col-sm-12">
+							<p>
+								<a href="">在那遥远的地方——青藏记忆（更新中……）</a>
+							</p>
+						</div>
+
+						<div class="col-sm-12">
+							<span style="font-size: 10px; color: #a09e9e;"
+								class="glyphicon glyphicon-time"> 2016-08-10 11:21 发表 |
+								落花 于2016-08-10 14:14:36 参与讨论</span>
+						</div>
+					</div>
+
+
+
+					<!-- 阅读和评论数目的小图标 -->
+					<div class="col-sm-2"
+						style="margin-left: 56px; padding-left: 32px; padding-top: 46px;">
+						<span style="font-size: 14px; color: #a09e9e; margin-right: 10px;"
+							class="glyphicon glyphicon-eye-open"><span
+							style="font-size: 14px; color: #a09e9e;">231</span></span> <span
+							style="font-size: 14px; color: #a09e9e;"
+							class="glyphicon glyphicon-comment"><span
+							style="font-size: 14px; color: #a09e9e;">45</span></span>
+					</div>
+
+					<!-- 白色分割线 -->
+
+
+				</div>
+
+				<!-- 正文6 -->
+				<div class="col-sm-12" id="users" style="">
+					<!-- photos of users -->
+					<div class="col-sm-1" id="pic">
+
+						<!-- 弹出框 联系人详细信息 -->
+						<img src="images/20.jpg" />
+					</div>
+
+					<!-- names of users -->
+					<div class="col-sm-2" id="username">
+						<span class="glyphicon glyphicon-book"
+							style="font-size: 20px; color: #a09e9e; margin-top: 14px; padding-left: 5px;"></span>
+						<p style="font-size: 10px; margin-top: 10px;">
+							<a href="">海马骑士</a>
+						</p>
+					</div>
+
+					<!-- content of users -->
+					<div class="col-sm-7" id="content">
+						<div class="col-sm-12">
+							<p>
+								<a href="">骄阳似火，在长沙逛吃两天了</a>
+							</p>
+						</div>
+						<div class="col-sm-12">
+							<span style="font-size: 10px; color: #a09e9e;"
+								class="glyphicon glyphicon-time"> 2016-08-10 12:01 发表 |
+								海马骑士 于2016-08-10 15:14:16 参与讨论</span>
+						</div>
+					</div>
+
+					<!-- 阅读和评论数目的小图标 -->
+					<div class="col-sm-2"
+						style="margin-left: 56px; padding-left: 32px; padding-top: 46px;">
+						<span style="font-size: 14px; color: #a09e9e; margin-right: 10px;"
+							class="glyphicon glyphicon-eye-open"><span
+							style="font-size: 14px; color: #a09e9e;">210</span></span> <span
+							style="font-size: 14px; color: #a09e9e;"
+							class="glyphicon glyphicon-comment"><span
+							style="font-size: 14px; color: #a09e9e;">33</span></span>
+					</div>
+
+					<!-- 白色分割线 -->
+
+
+				</div>
+
+				<!-- 正文7 -->
+				<div class="col-sm-12" id="users" style="">
+					<!-- photos of users -->
+					<div class="col-sm-1" id="pic">
+
+						<!-- 弹出框 联系人详细信息 -->
+						<img src="images/2008.jpg" />
+					</div>
+
+					<!-- names of users -->
+					<div class="col-sm-2" id="username">
+						<span class="glyphicon glyphicon-book"
+							style="font-size: 20px; color: #a09e9e; margin-top: 14px; padding-left: 5px;"></span>
+						<p style="font-size: 10px; margin-top: 10px;">
+							<a href="">商洛阳春</a>
+						</p>
+					</div>
+
+					<!-- content of users -->
+					<div class="col-sm-7" id="content">
+						<div class="col-sm-12">
+							<p>
+								<a href="">骑行坝上</a>
+							</p>
+						</div>
+						<div class="col-sm-12">
+							<span style="font-size: 10px; color: #a09e9e;"
+								class="glyphicon glyphicon-time"> 2016-08-10 14:41 发表 |
+								落雁 于2016-08-10 14:54:16 参与讨论</span>
+						</div>
+					</div>
+
+					<!-- 阅读和评论数目的小图标 -->
+					<div class="col-sm-2"
+						style="margin-left: 56px; padding-left: 32px; padding-top: 46px;">
+						<span style="font-size: 14px; color: #a09e9e; margin-right: 10px;"
+							class="glyphicon glyphicon-eye-open"><span
+							style="font-size: 14px; color: #a09e9e;">100</span></span> <span
+							style="font-size: 14px; color: #a09e9e;"
+							class="glyphicon glyphicon-comment"><span
+							style="font-size: 14px; color: #a09e9e;">23</span></span>
+					</div>
+
+					<!-- 白色分割线 -->
+
+				</div>
+
+				<!-- 正文8 -->
+				<div class="col-sm-12" id="users" style="">
+					<!-- photos of users -->
+					<div class="col-sm-1" id="pic">
+
+						<!-- 弹出框 联系人详细信息 -->
+						<img src="images/2035.jpg" id="group_1" />
+					</div>
+
+					<!-- names of users -->
+					<div class="col-sm-2" id="username">
+						<span class="glyphicon glyphicon-book"
+							style="font-size: 20px; color: #a09e9e; margin-top: 14px; padding-left: 5px;"></span>
+						<p style="font-size: 10px; margin-top: 10px;">
+							<a href="">xubl</a>
+						</p>
+					</div>
+
+					<!-- content of users -->
+					<div class="col-sm-7" id="content">
+						<div class="col-sm-12">
+							<p>
+								<a href="">西双版纳-漠河 7681公里 沿着中国最隐秘的腹地骑行（更新完毕）</a>
+							</p>
+						</div>
+						<div class="col-sm-12">
+							<span style="font-size: 10px; color: #a09e9e;"
+								class="glyphicon glyphicon-time"> 2016-08-10 14:01 发表 |
+								落雁 于2016-08-10 15:14:16 参与讨论</span>
+						</div>
+					</div>
+
+					<!-- 阅读和评论数目的小图标 -->
+					<div class="col-sm-2"
+						style="margin-left: 56px; padding-left: 32px; padding-top: 46px;">
+						<span style="font-size: 14px; color: #a09e9e; margin-right: 10px;"
+							class="glyphicon glyphicon-eye-open"><span
+							style="font-size: 14px; color: #a09e9e;">120</span></span> <span
+							style="font-size: 14px; color: #a09e9e;"
+							class="glyphicon glyphicon-comment"><span
+							style="font-size: 14px; color: #a09e9e;">23</span></span>
+					</div>
+
+					<!-- 白色分割线 -->
+
+
+				</div>
+
+				<!-- 正文9 -->
+				<div class="col-sm-12" id="users" style="">
+					<!-- photos of users -->
+					<div class="col-sm-1" id="pic">
+
+						<!-- 弹出框 联系人详细信息 -->
+						<img src="images/8b85b.jpg" id="group_1" />
+					</div>
+
+					<!-- names of users -->
+					<div class="col-sm-2" id="username">
+						<span class="glyphicon glyphicon-book"
+							style="font-size: 20px; color: #a09e9e; margin-top: 14px; padding-left: 5px;"></span>
+						<p style="font-size: 10px; margin-top: 10px;">
+							<a href="">从奴隶到国王</a>
+						</p>
+					</div>
+
+					<!-- content of users -->
+					<div class="col-sm-7" id="content">
+						<div class="col-sm-12">
+							<p>
+								<a href="">更新中：暴瘦30斤，文青变屌丝，77天跨国冬骑-西藏-珠峰-尼泊尔，练就钢铁般的菊花！</a>
+							</p>
+						</div>
+						<div class="col-sm-12">
+							<span style="font-size: 10px; color: #a09e9e;"
+								class="glyphicon glyphicon-time"> 2016-08-10 14:51 发表 |
+								落雁 于2016-08-10 15:14:16 参与讨论</span>
+						</div>
+					</div>
+
+					<!-- 阅读和评论数目的小图标 -->
+					<div class="col-sm-2"
+						style="margin-left: 56px; padding-left: 32px; padding-top: 46px;">
+						<span style="font-size: 14px; color: #a09e9e; margin-right: 10px;"
+							class="glyphicon glyphicon-eye-open"><span
+							style="font-size: 14px; color: #a09e9e;">320</span></span> <span
+							style="font-size: 14px; color: #a09e9e;"
+							class="glyphicon glyphicon-comment"><span
+							style="font-size: 14px; color: #a09e9e;">43</span></span>
+					</div>
+					<!-- 白色分割线 -->
+
+
+				</div>
+
+				<!-- 正文10 -->
+				<div class="col-sm-12" id="users" style="">
+					<!-- photos of users -->
+					<div class="col-sm-1" id="pic">
+
+						<!-- 弹出框 联系人详细信息 -->
+						<img src="images/22.jpg" />
+
+					</div>
+
+					<!-- names of users -->
+					<div class="col-sm-2" id="username">
+						<span class="glyphicon glyphicon-book"
+							style="font-size: 20px; color: #a09e9e; margin-top: 14px; padding-left: 5px;"></span>
+						<p style="font-size: 10px; margin-top: 10px;">
+							<a href="">miaobiaoxian</a>
+						</p>
+					</div>
+
+					<!-- content of users -->
+					<div class="col-sm-7" id="content">
+						<div class="col-sm-12">
+							<p>
+								<a href="">骑车去非洲，我想看看究竟有多难</a>
+							</p>
+						</div>
+						<div class="col-sm-12">
+							<span style="font-size: 10px; color: #a09e9e;"
+								class="glyphicon glyphicon-time"> 2016-08-10 15:01 发表 |
+								Aa 于2016-08-10 16:14:16 参与讨论</span>
+						</div>
+					</div>
+
+					<!-- 阅读和评论数目的小图标 -->
+					<div class="col-sm-2"
+						style="margin-left: 56px; padding-left: 32px; padding-top: 46px;">
+						<span style="font-size: 14px; color: #a09e9e; margin-right: 10px;"
+							class="glyphicon glyphicon-eye-open"><span
+							style="font-size: 14px; color: #a09e9e;">240</span></span> <span
+							style="font-size: 14px; color: #a09e9e;"
+							class="glyphicon glyphicon-comment"><span
+							style="font-size: 14px; color: #a09e9e;">71</span></span>
+					</div>
+					<!-- 白色分割线 -->
+
+
+				</div>
+
+				<!-- 正文11-->
+				<div class="col-sm-12" id="users" style="">
+					<!-- photos of users -->
+					<div class="col-sm-1" id="pic">
+
+						<!-- 弹出框 联系人详细信息 -->
+						<img src="images/7f9.jpg" />
+					</div>
+
+					<!-- names of users -->
+					<div class="col-sm-2" id="username">
+						<span class="glyphicon glyphicon-book"
+							style="font-size: 20px; color: #a09e9e; margin-top: 14px; padding-left: 5px;"></span>
+						<p style="font-size: 10px; margin-top: 10px;">
+							<a href="">梦飞</a>
+						</p>
+					</div>
+
+					<!-- content of users -->
+					<div class="col-sm-7" id="content">
+						<div class="col-sm-12">
+							<p>
+								<a href="">大连永冠骑游越南—胡志明至广西友谊关</a>
+							</p>
+						</div>
+						<div class="col-sm-12">
+							<span style="font-size: 10px; color: #a09e9e;"
+								class="glyphicon glyphicon-time"> 2016-08-10 15:21 发表 | 落
+								于2016-08-10 16:14:17 参与讨论</span>
+						</div>
+					</div>
+
+					<!-- 阅读和评论数目的小图标 -->
+					<div class="col-sm-2"
+						style="margin-left: 56px; padding-left: 32px; padding-top: 46px;">
+						<span style="font-size: 14px; color: #a09e9e; margin-right: 10px;"
+							class="glyphicon glyphicon-eye-open"><span
+							style="font-size: 14px; color: #a09e9e;">140</span></span> <span
+							style="font-size: 14px; color: #a09e9e;"
+							class="glyphicon glyphicon-comment"><span
+							style="font-size: 14px; color: #a09e9e;">23</span></span>
+					</div>
+					<!-- 白色分割线 -->
+
+
+				</div>
+
+				<!-- 正文12 -->
+				<div class="col-sm-12" id="users" style="">
+					<!-- photos of users -->
+					<div class="col-sm-1" id="pic">
+
+						<!-- 弹出框 联系人详细信息 -->
+						<img src="images/8d48.jpg" />
+					</div>
+
+					<!-- names of users -->
+					<div class="col-sm-2" id="username">
+						<span class="glyphicon glyphicon-book"
+							style="font-size: 20px; color: #a09e9e; margin-top: 14px; padding-left: 5px;"></span>
+						<p style="font-size: 10px; margin-top: 10px;">
+							<a href="">骑浪</a>
+						</p>
+					</div>
+
+					<!-- content of users -->
+					<div class="col-sm-7" id="content">
+						<div class="col-sm-12">
+							<p>
+								<a href="">一不小心中，就环了个华---《单车暂留在喀什青旅，一路向东，搭车回家参加大哥婚礼》</a>
+							</p>
+						</div>
+						<div class="col-sm-12">
+							<span style="font-size: 10px; color: #a09e9e;"
+								class="glyphicon glyphicon-time"> 2016-08-10 17:01 发表 | 雁
+								于2016-08-10 18:14:01 参与讨论</span>
+						</div>
+					</div>
+
+					<!-- 阅读和评论数目的小图标 -->
+					<div class="col-sm-2"
+						style="margin-left: 56px; padding-left: 32px; padding-top: 46px;">
+						<span style="font-size: 14px; color: #a09e9e; margin-right: 10px;"
+							class="glyphicon glyphicon-eye-open"><span
+							style="font-size: 14px; color: #a09e9e;">120</span></span> <span
+							style="font-size: 14px; color: #a09e9e;"
+							class="glyphicon glyphicon-comment"><span
+							style="font-size: 14px; color: #a09e9e;">19</span></span>
+					</div>
+
+					<!-- 白色分割线 -->
+
+				</div>
+
+				<!-- 正文13 -->
+				<div class="col-sm-12" id="users" style="">
+					<!-- photos of users -->
+					<div class="col-sm-1" id="pic">
+
+						<!-- 弹出框 联系人详细信息 -->
+						<img src="images/dd7.jpg" />
+					</div>
+
+					<!-- names of users -->
+					<div class="col-sm-2" id="username">
+						<span class="glyphicon glyphicon-book"
+							style="font-size: 20px; color: #a09e9e; margin-top: 14px; padding-left: 5px;"></span>
+						<p style="font-size: 10px; margin-top: 10px;">
+							<a href="">果果</a>
+						</p>
+					</div>
+
+					<!-- content of users -->
+					<div class="col-sm-7" id="content">
+						<div class="col-sm-12">
+							<p>
+								<a href="">2016年六七月从奉节骑行三峡、神农架、三翻秦岭</a>
+							</p>
+						</div>
+						<div class="col-sm-12">
+							<span style="font-size: 10px; color: #a09e9e;"
+								class="glyphicon glyphicon-time"> 2016-08-10 18:11 发表 |
+								落雁 于2016-08-10 18:14:16 参与讨论</span>
+						</div>
+					</div>
+
+					<!-- 阅读和评论数目的小图标 -->
+					<div class="col-sm-2"
+						style="margin-left: 56px; padding-left: 32px; padding-top: 46px;">
+						<span style="font-size: 14px; color: #a09e9e; margin-right: 10px;"
+							class="glyphicon glyphicon-eye-open"><span
+							style="font-size: 14px; color: #a09e9e;">220</span></span> <span
+							style="font-size: 14px; color: #a09e9e;"
+							class="glyphicon glyphicon-comment"><span
+							style="font-size: 14px; color: #a09e9e;">13</span></span>
+					</div>
+					<!-- 白色分割线 -->
+
+
+				</div>
+
+
+				<!-- 正文14 -->
+				<div class="col-sm-12" id="users" style="">
+					<!-- photos of users -->
+					<div class="col-sm-1" id="pic">
+
+						<!-- 弹出框 联系人详细信息 -->
+						<img src="images/b0.jpg" />
+
+					</div>
+
+					<!-- names of users -->
+					<div class="col-sm-2" id="username">
+						<span class="glyphicon glyphicon-book"
+							style="font-size: 20px; color: #a09e9e; margin-top: 14px; padding-left: 5px;"></span>
+						<p style="font-size: 10px; margin-top: 10px;">
+							<a href="">hrcd5</a>
+						</p>
+					</div>
+
+					<!-- content of users -->
+					<div class="col-sm-7" id="content">
+						<div class="col-sm-12">
+							<p>
+								<a href="">行者普渡 昆明行者 第七季 第五集</a>
+							</p>
+						</div>
+						<div class="col-sm-12">
+							<span style="font-size: 10px; color: #a09e9e;"
+								class="glyphicon glyphicon-time"> 2016-08-10 18:01 发表 |
+								qq 于2016-08-10 19:14:12 参与讨论</span>
+						</div>
+					</div>
+
+					<!-- 阅读和评论数目的小图标 -->
+					<div class="col-sm-2"
+						style="margin-left: 56px; padding-left: 32px; padding-top: 46px;">
+						<span style="font-size: 14px; color: #a09e9e; margin-right: 10px;"
+							class="glyphicon glyphicon-eye-open"><span
+							style="font-size: 14px; color: #a09e9e;">320</span></span> <span
+							style="font-size: 14px; color: #a09e9e;"
+							class="glyphicon glyphicon-comment"><span
+							style="font-size: 14px; color: #a09e9e;">23</span></span>
+					</div>
+
+					<!-- 白色分割线 -->
+
+				</div>
+
+				<!-- 正文15 -->
+				<div class="col-sm-12" id="users" style="">
+					<!-- photos of users -->
+					<div class="col-sm-1" id="pic">
+
+						<!-- 弹出框 联系人详细信息 -->
+						<img src="images/1-50.jpg" />
+					</div>
+
+					<!-- names of users -->
+					<div class="col-sm-2" id="username">
+						<span class="glyphicon glyphicon-book"
+							style="font-size: 20px; color: #a09e9e; margin-top: 14px; padding-left: 5px;"></span>
+						<p style="font-size: 10px; margin-top: 10px;">
+							<a href="">Tank Hill</a>
+						</p>
+					</div>
+
+					<!-- content of users -->
+					<div class="col-sm-7" id="content">
+						<div class="col-sm-12">
+							<p>
+								<a href="">鸡屁股之旅~新疆喀纳斯湖骑行招募贴</a>
+							</p>
+						</div>
+
+						<div class="col-sm-12">
+							<span style="font-size: 10px; color: #a09e9e;"
+								class="glyphicon glyphicon-time"> 2016-08-10 20:01 发表 | 洛
+								于2016-08-10 21:04:16 参与讨论</span>
+						</div>
+					</div>
+
+					<!-- 阅读和评论数目的小图标 -->
+					<div class="col-sm-2"
+						style="margin-left: 56px; padding-left: 32px; padding-top: 46px;">
+						<span style="font-size: 14px; color: #a09e9e; margin-right: 10px;"
+							class="glyphicon glyphicon-eye-open"><span
+							style="font-size: 14px; color: #a09e9e;">520</span></span> <span
+							style="font-size: 14px; color: #a09e9e;"
+							class="glyphicon glyphicon-comment"><span
+							style="font-size: 14px; color: #a09e9e;">63</span></span>
+					</div>
+
+					<!-- 白色分割线 -->
+
+
+				</div>
+
+				<!-- 正文16 -->
+				<div class="col-sm-12" id="users" style="">
+					<!-- photos of users -->
+					<div class="col-sm-1" id="pic">
+						<img src="images/9e.jpg" />
+					</div>
+
+					<!-- names of users -->
+					<div class="col-sm-2" id="username">
+						<span class="glyphicon glyphicon-book"
+							style="font-size: 20px; color: #a09e9e; margin-top: 14px; padding-left: 5px;"></span>
+						<p style="font-size: 10px; margin-top: 10px;">
+							<a href="">一人</a>
+						</p>
+					</div>
+
+					<!-- content of users -->
+					<div class="col-sm-7" id="content">
+						<div class="col-sm-12">
+							<p>
+								<a href="">小白骑行26天感受分享</a>
+							</p>
+						</div>
+
+						<div class="col-sm-12">
+							<span style="font-size: 10px; color: #a09e9e;"
+								class="glyphicon glyphicon-time"> 2016-08-10 22:01 发表 |
+								hxug 于2016-08-10 22:14:06 参与讨论</span>
+						</div>
+					</div>
+
+					<!-- 阅读和评论数目的小图标 -->
+					<div class="col-sm-2"
+						style="margin-left: 56px; padding-left: 32px; padding-top: 46px; padding-bottom: 30px;">
+						<span style="font-size: 14px; color: #a09e9e; margin-right: 10px;"
+							class="glyphicon glyphicon-eye-open"><span
+							style="font-size: 14px; color: #a09e9e;">141</span></span> <span
+							style="font-size: 14px; color: #a09e9e;"
+							class="glyphicon glyphicon-comment"><span
+							style="font-size: 14px; color: #a09e9e;">43</span></span>
+					</div>
+					<!-- 白色分割线 -->
+
+				</div>
+
+				<!-- 底部分页 -->
+				<div class="col-sm-12"
+					style="height: 100px; padding-top: 30px; border: solid white 1px;">
+					<!-- 顶部分页 -->
+					<div class="col-sm-3"></div>
+					<div class="col-sm-5" style="padding-bottom: 0px;">
+						<a class="btn btn-default" href="#" role="button">1</a>
+						<button class="btn btn-default" type="submit">2</button>
+						<input class="btn btn-default" type="button" value="3"> <input
+							class="btn btn-default" type="submit" value="4"> <input
+							class="btn btn-default" type="submit" value="...120">
+					</div>
+					<div class="col-sm-3" id="top_fenye" style="margin-left: -110px;">
+						<input type="text" style="width: 52px;" class="form-control"
+							placeholder="1"> <span>/120</span> <input
+							class="btn btn-default" type="submit" value="下一页">
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div id="box_float">
+					<div id="float" class="div1">
+						<h4>
+							<a href="../cebian/align/align.html"><span
+								class="glyphicon glyphicon-screenshot"></span>团队联盟</a>
+						</h4>
+						<a href=""><p>联盟-让我们的团队越来越强大</p></a>
+						<hr>
+						<h4>
+							<a href="../cebian/share/share.html"><span
+								class="glyphicon glyphicon-share-alt"></span>故事分享 </a>
+						</h4>
+						<p>你就是主人公，快来分享你的故事吧</p>
+						<hr>
+						<h4>
+							<a href="../cebian/activity/activity.html"><span
+								class="glyphicon glyphicon-hand-right"></span>参与活动 </a>
+						</h4>
+						<p>看别人玩不如自己也参与进来呦！</p>
+						<hr>
+						<h4>
+							<a href="../cebian/idea/idea.html"><span
+								class="glyphicon glyphicon-send"></span>出谋划策 </a>
+						</h4>
+						<p>您有好的想法都可以跟我们联系，会有惊喜等着你</p>
+						<hr>
+						<h4>
+							<a href="../cebian/idea/idea.html"><span
+								class="glyphicon glyphicon-user"></span>联系我们 </a>
+						</h4>
+						<p>
+							联系电话：18040581957<br>官方QQ群：1090701535
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- **网页底部开始** -->
+	<div class="row">
+		<div class="rontainer">
+			<div class="foot">
+				<div class="foot1">
+					<div class="col-sm-4">
+						<!-- 友情链接 -->
+						<ul class="bbgg">
+							<li
+								style="font-size: 20px; border-bottom: dotted 1px gray; padding- bottom: 5px; margin-bottom: 5px;">友情链接
+
+							</li>
+							<li><a href="">武汉微大学</a></li>
+							<li><a href="">华中科技大学</a></li>
+							<li><a href="">中南财经政法的大学</a></li>
+							<li><a href="">武汉纺织大学</a></li>
+						</ul>
+					</div>
+					<!-- 二维码 -->
+					<div class="col-sm-4">
+						<ul class="bbgg bbggerweima">
+							<li
+								style="font-size: 20px; border-bottom: dotted 1px gray; padding-bottom: 5px;">关注我们</li>
+							<li class="col-sm-6"><a href=""><img
+									style="width: 110px; height: 110px; margin-bottom: 5px;"
+									src="images/dibu/2wm.png"></a>
+								<p>关注微信公众号</p></li>
+							<li class="col-sm-6"><a href=""><img
+									style="width: 110px; height: 110px; margin-bottom: 5px;"
+									src="images/dibu/2222.png"></a>
+								<p>下载骑生活APP</p></li>
+						</ul>
+					</div>
+					<!-- 联系方式 -->
+					<div class="col-sm-4">
+						<ul class="bbgg">
+							<li
+								style="font-size: 20px; border-bottom: dotted 1px gray; padding-bottom: 5px; margin- bottom: 5px;">联系我们</li>
+							<li>电话：027-87399446</li>
+							<li>QQ：1090701535</li>
+							<li>微信： miaomiaozuihaole</li>
+							<li>Email： bikeyourlief@163.com</li>
+						</ul>
+					</div>
+					<!-- 最低端 -->
+					<div class="col-sm-12">
+						<div class="foot2">
+							<div class="col-sm-4 dibubanquan1">
+								<img src="images/dibu/z-01.jpg">
+							</div>
+							<div class="col-sm-4 dibubanquan2">
+								<font>Copyright © 20016-2017,All Rights Reserved</font>
+							</div>
+							<div class="col-sm-4 dibubanquan3">
+								<font>Bilibili骑生活网络科技有限公司版权所有</font>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- **网页底部结束** -->
+
+
+
+	<!-- 右侧固定部分插件 -->
+	<script type="text/javascript">
+		(function() {
+			var oDiv = document.getElementById("float");
+			var H = 0, iE6;
+			var Y = oDiv;
+			while (Y) {
+				H += Y.offsetTop;
+				Y = Y.offsetParent
+			}
+			;
+			iE6 = window.ActiveXObject && !window.XMLHttpRequest;
+			if (!iE6) {
+				window.onscroll = function() {
+					var s = document.body.scrollTop
+							|| document.documentElement.scrollTop;
+					if (s > H) {
+						oDiv.className = "div1 div2";
+						if (iE6) {
+							oDiv.style.top = (s - H) + "px";
+						}
+					} else {
+						oDiv.className = "div1";
+					}
+				};
+			}
+		})();
+	</script>
+
+
+	<!-- 引用bootstrap文件 -->
+	<script src="jQuery/jquery-1.11.3/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+@CHARSET "UTF-8";
+
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+body {
+	background: black;
+}
+
+#tuan {
+	background-color: white;
+	padding-top: 30px;
+}
+
+/*下拉列表样式设置*/
+.chengshixuanze select:nth-child(1) {
+	margin-right: 6px;
+}
+
+.chengshixuanze select:nth-child(2) {
+	margin-right: 5px;
+}
+
+.chengshixuanze select:nth-child(3) {
+	margin-right: 0;
+	padding-right: 0;
+}
+
+.fo-control {
+	float: left;
+	display: block;
+	width: 28%;
+	height: 34px;
+	margin-bottom: 10px;
+	padding: 6px 1px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow
+		ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out
+		.15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.top {
+	margin: 5px auto;
+	color: #990000;
+	text-align: center;
+}
+
+.info select {
+	border: 1px #993300 solid;
+	background: #FFFFFF;
+}
+
+.info {
+	margin: 5px;
+	text-align: center;
+}
+
+.info #show {
+	color: #3399FF;
+}
+
+.bottom {
+	text-align: right;
+	font-size: 12px;
+	color: #CCCCCC;
+	width: 1000px;
+}

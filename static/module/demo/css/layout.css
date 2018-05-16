@@ -1,0 +1,923 @@
+@CHARSET "UTF-8";
+
+/* **样式初始化** */
+.row, .container {
+	margin: 0;
+	padding: 0;
+}
+
+/* **改写bootstrap** */
+@media ( min-width : 768px) {
+	.navbar {
+		border-radius: 0;
+	}
+}
+
+.navbar {
+	position: relative;
+	min-height: 50px;
+	margin-bottom: 0;
+	border: 0px;
+}
+
+.navbar-default {
+	background-color: #000;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #c0c0c0;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus
+	{
+	color: #c0c0c0;
+	background-color: transparent;
+}
+
+.dropdown-menu {
+	background-color: #000;
+}
+
+.dropdown-menu>li>a {
+	color: #fff;
+}
+/* **改写bootstrap结束** */
+
+/* **开始头部导航部分** */
+.navbar-right li {
+	font-size: 16px;
+	line-height: 50px;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.navbar-right li a:hover {
+	color: #ffffff;
+}
+
+.dropdown ul li {
+	font-size: 16px;
+	height: 40px;
+	padding-top: 5px;
+}
+
+.dropdown-menu {
+	min-width: 100px;
+}
+
+.dengluanniu li:nth-child(2) {
+	padding-left: 10px;
+}
+
+/*  导航+注册登录     */
+.checkbox {
+	margin-left: 20px;
+}
+
+.btt {
+	cursor: pointer;
+	color: blue;
+	background: white;
+}
+
+.btt:hover {
+	color: blue;
+	text-decoration: underline;
+	background: white;
+}
+
+#font {
+	margin-bottom: 5px;
+}
+
+.form-signin {
+	max-width: 330px;
+	padding: 30px 15px 30px 15px;
+	margin: 0 auto;
+}
+
+.form-signin .checkbox {
+	margin-bottom: 10px;
+}
+
+.form-signin .checkbox {
+	font-weight: normal;
+}
+
+.form-signin .form-control {
+	position: relative;
+	font-size: 16px;
+	height: auto;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.form-signin .form-control:focus {
+	z-index: 2;
+}
+
+.modal-body {
+	padding-top: 0px;
+	padding-bottom: 50px;
+}
+
+.form-signin input[type="text"] {
+	margin-bottom: 14px;
+	border-radius: 0;
+	background: url(../images/login/login_user.png) 0 0 #d9d7d8 no-repeat;
+	padding-left: 60px;
+	color: #FFFFFF;
+}
+
+.form-signin input[type="password"] {
+	margin-bottom: 10px;
+	border-radius: 0;
+	background: url(../images/login/login_pas.png) 0 0 #d9d7d8 no-repeat;
+	padding-left: 60px;
+	color: #FFFFFF;
+}
+
+.form-signin button {
+	border-radius: 0;
+}
+
+#username2 {
+	background: url(../images/login/yzm.jpg) 0 0 #d9d7d8 no-repeat;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus,
+	.btn.active.focus {
+	outline: 5px auto;
+}
+/* **结束头部导航** */
+
+/* **banner部分设计** */
+.bannerzong {
+	background-color: #2a2a2a;
+	height: 520px;
+	padding-top: 10px;
+}
+
+/* **第一个模块-高校联盟** */
+.mokuai1 {
+	height: 700px;
+	width: 100%;
+	background-color: #f7f7f7;
+	padding-top: 40px;
+}
+
+.mokuai1 .row {
+	margin-left: 60px;
+	margin-right: 60px;
+}
+
+/* 横向导线1 */
+.daoxian1 ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.daoxian1 ul#navlist {
+	font: 22px "微软雅黑";
+	padding-bottom: 13px;
+}
+
+.daoxian1 ul#navlist li span {
+	background: #f7f7f7;
+}
+
+.daoxian1 ul#navlist li {
+	float: left;
+	height: 30px;
+	width: 100%;
+}
+
+.daoxian1 ul#navlist .list1 {
+	border-bottom: 1px solid #d9d9d9;
+	width: 100%;
+	margin-bottom: -25px;
+}
+
+#navlist a {
+	display: block;
+	color: #666;
+	text-decoration: none;
+	padding: 6px 5px;
+	width: 100%;
+	text-align: center;
+	width: 100%;
+}
+
+#navlist span {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* 图片1部分 */
+.lianmengimg {
+	padding-top: 10px;
+}
+
+.lianmengleft {
+	background-color: #ffffff;
+	margin-top: 20px;
+}
+
+.lianmengtext a{
+	font: bolder;
+	color: #337ab7;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1em;
+	font-family: "微软雅黑", "Heiti SC", Arial;
+	font-size: 20px;
+}
+
+.lianmengtext a:nth-child(1) {
+	font: bolder;
+	color: #337ab7;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1em;
+	font-family: "微软雅黑", "Heiti SC", Arial;
+	font-size: 20px;
+}
+
+.lianmengtext h2 {
+	padding-bottom: 15px;
+}
+/* 联盟热点 */
+.lianmengredian .row {
+	margin: 0;	
+	width: 100%;
+}
+
+.col-sm-7 {
+	padding-left: 0;
+	pading-right: 15px;
+}
+
+.rediantext {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	background-color: #ffffff;
+}
+
+.rediantext h4 {
+	margin: 0px;
+	line-height: 1em;
+	padding: 10px 10px 17px 0;
+	font-size: 22px;
+	color: #000;
+	border-bottom: #D8D8D8 1px solid;
+	font-weight: 600;
+	font-family: "微软雅黑", "Heiti SC", Arial;
+	cursor: pointer;
+}
+
+.rediantext p {
+	font-size: 16px;
+	width: 100%; padding : 7px 0;
+	border-bottom: #D8D8D8 1px dotted;
+	cursor: pointer;
+	padding: 7px 0;
+}
+
+.rediantext p:nth-child(5) {
+	border-bottom: none;
+	padding: 7px 10px 0 0;
+}
+
+/* 文字滚动播放 */
+.shell span:nth-child(1) a {
+	display: block;
+	margin-bottom: 10px;
+	padding-top: 8px;
+	color: #000;
+	font-weight: bold;
+}
+
+.shell a {
+	display: block;
+	line-height: 22px;
+	text-decoration: none;
+	color: #575757;
+	font-family: Arial;
+	font-size: 16px;
+}
+
+.shell a:hover {
+	text-decoration: underline;
+}
+
+.shell {
+	margin: 30px 10px 10px 0;
+	background-color: #ffffff;
+}
+
+#div1 {
+	height: 105px;
+	overflow: hidden;
+}
+
+/* 联盟bottom */
+.lianmengbottom {
+	margin-top: 10px;
+}
+
+.lianmengbottom .col-sm-6 {
+	padding: 0;
+}
+/* **第一个模块-高校联盟结束** */
+
+/* **第二个模块-活动** */
+
+/* 横向导线2 */
+.daoxian2 ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.daoxian2 ul#navlist2 {
+	font: 22px "微软雅黑";
+	padding-bottom: 13px;
+}
+
+.daoxian2 ul#navlist2 li span {
+	background: #f7f7f7;
+	border-radius: 10px;
+}
+
+.daoxian2 ul#navlist2 li {
+	float: left;
+	height: 30px;
+	width: 100%;
+}
+
+.daoxian2 ul#navlist2 .list21 {
+	border-bottom: 1px solid #d9d9d9;
+	width: 100%;
+	margin-bottom: -25px;
+}
+
+#navlist2 a {
+	display: block;
+	color: #666;
+	text-decoration: none;
+	padding: 6px 5px;
+	width: 100%;
+	text-align: center;
+	width: 100%;
+}
+
+#navlist2 span {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/*  关于活动   */
+.pict {
+	height: 100px;
+	width: 100px;
+}
+
+.hdo img:hover {
+	transition: 0.5s;
+	transform: scale(1.1);
+	box-shadow: 0px 0px 15px #ccc;
+}
+
+.hdo {
+	border-radius: 10px;
+	background: #f7f7f7;
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+
+.hdo .col-sm-4 {
+	margin-left: -10px;
+	margin-top: 35px;
+}
+
+#coo {
+	margin-left: 60px;
+	margin-right: 60px;
+	margin-top: 30px;
+}
+
+#coo .col-sm-4 {
+	width: 32%;
+}
+
+#coo .col-sm-8 {
+	padding-right: 0;
+	width: 68%;
+}
+
+#coo p {
+	color: gray;
+	font-size: 14px;
+	margin-top: 6px;
+}
+
+#coo font {
+	margin-top: 5px;
+	color: gray;
+	font-size: 12px;
+	margin-bottom: 15px;
+}
+
+.b_b {
+	margin-top: 15px;
+	font-size: 17px;
+}
+
+/* **第二个模块结束-活动结束** */
+
+/* 第三个模块开始-bicycle */
+.mokuai4 {
+	margin-left: 60px;
+	margin-right: 60px;
+	margin-top: 20px;
+}
+
+.mokuai4 .col-sm-4 {
+	padding: 0;
+}
+
+.sanzhangtu1 {
+	margin-top: 25px;
+}
+
+.sanzhangtu1 p {
+	text-align: center;
+}
+
+.sanzhangtu2 {
+	margin-top: 25px;
+}
+
+.sanzhangtu2 p {
+	text-align: center;
+}
+
+.sanzhangtu3 {
+	margin-top: 25px;
+}
+
+.sanzhangtu3 p {
+	text-align: center;
+}
+/* 横向导线 */
+.daoxian4 ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.daoxian4 ul#navlist4 {
+	font: 22px "微软雅黑";
+	padding-bottom: 13px;
+}
+
+.daoxian4 ul#navlist4 li span {
+	background: #f7f7f7;
+	border-radius: 10px;
+}
+
+.daoxian4 ul#navlist4 li {
+	float: left;
+	height: 30px;
+	width: 100%;
+}
+
+.daoxian4 ul#navlist4 .list41 {
+	border-bottom: 1px solid #d9d9d9;
+	width: 100%;
+	margin-bottom: -25px;
+}
+
+#navlist4 a {
+	display: block;
+	color: #666;
+	text-decoration: none;
+	padding: 6px 5px;
+	width: 100%;
+	text-align: center;
+	width: 100%;
+}
+
+#navlist4 span {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/*导航线结束*/
+.mokuai4neirong {
+	margin-top: 20px;
+}
+
+/*图片缩放效果*/
+.panel-body {
+	overflow: hidden;
+}
+
+.mokuai4neirong img:hover {
+	cursor: pointer; /*鼠标移到图片上时，显示手的样式*/
+	transition: 0.6s;
+	transform: scale(1.2);
+}
+
+/*了解更多里面的a样式*/
+.w a {
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+	height: 40px;
+	line-height: 40px;
+	background: #e6fbe9;
+	display: block;
+	height: 44px;
+	width: 100%;
+}
+
+.w a:hover {
+	background: black;
+	cursor: pointer;
+	color: white;
+}
+
+/*图片下面的P标签*/
+.che p {
+	cursor: pointer;
+}
+
+/* 第三个模块结束-bicycle */
+
+/* **第四个模块开始-骑行故事** */
+
+/*大背景颜色设置*/
+.journey {
+	padding-left: 60px;
+	padding-right: 60px;
+	margin-top: 20px;
+}
+
+/*五个模块间距设置*/
+.journey #dt {
+	width: 19%;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-right: 13px;
+	background-color: #ffffff;
+	border: solid #dcdada 1px;
+	padding-right: 0px;
+}
+
+/*五个模块不同的效果设置*/
+.j {
+	height: 280px;
+	margin-right: 10px;
+	border: solid #dcdada 1px;
+	margin-top: 30px;
+}
+
+.o {
+	margin-top: 30px;
+}
+
+.u {
+	margin-top: 30px;
+}
+
+.r {
+	margin-top: 30px;
+}
+
+.n {
+	margin-top: 30px;
+}
+/*五张图片大小设置*/
+.journey .j img {
+	height: 170px;
+	width: 100%;
+}
+
+.journey .o img {
+	height: 290px;
+	width: 100%;
+}
+
+.journey .u img {
+	height: 390px;
+	width: 100%;
+}
+
+.journey .r img {
+	height: 290px;
+	width: 100%;
+}
+
+.journey .n img {
+	height: 170px;
+	width: 100%;
+}
+
+/* 横向导线 */
+.daoxian3 ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.daoxian3 ul#navlist3 {
+	font: 22px "微软雅黑";
+	padding-bottom: 13px;
+}
+
+.daoxian3 ul#navlist3 li span {
+	background: #f7f7f7;
+	border-radius: 10px;
+}
+
+.daoxian3 ul#navlist3 li {
+	float: left;
+	height: 30px;
+	width: 100%;
+}
+
+.daoxian3 ul#navlist3 .list31 {
+	border-bottom: 1px solid #d9d9d9;
+	width: 100%;
+	margin-bottom: -25px;
+}
+
+#navlist3 a {
+	display: block;
+	color: #666;
+	text-decoration: none;
+	padding: 6px 5px;
+	width: 100%;
+	text-align: center;
+	width: 100%;
+}
+
+#navlist3 span {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/*点击小图标效果*/
+#zan a span {
+	color: #b7b7b7;
+}
+
+#zan a span:hover {
+	color: pink;
+}
+
+#fxrid {
+	margin-top: 5px;
+	color: #66667d;
+	height: 18px;
+	padding-left: 0px;
+}
+
+/*模态框叉号后的分割线设置*/
+#chahao {
+	width: 100%;
+	border: solid #f7f7f7 1px;
+	margin-bottom: 20px;
+}
+
+/*模态框里的分享人头像设置*/
+#m2e img {
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+}
+
+/*模态框里的关注按钮设置*/
+.btn btn-info {
+	color: white;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+/*模态框里的私信按钮设置*/
+.btn btn-warning {
+	color: white;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+/*模态框粉丝数*/
+#fensi .col-sm-2 {
+	width: 60px;
+	height: 50px;
+	padding-left: 12px;
+}
+
+/*模态框叉号点击效果*/
+.modal-footer span:hover {
+	color: red;
+}
+
+/*模态框分享图标大小设置*/
+#share img {
+	height: 20px;
+	width: 20px
+}
+
+/*模态框点赞人头像效果*/
+#dzrtx a img:hover {
+	transition: 0.3s;
+	transform: scale(0.8);
+}
+
+#dzrtx a img {
+	height: 60px;
+	width: 60px;
+	border-radius: 60px;
+}
+
+/*模态框虚线分割线*/
+#mdashed {
+	width: 100%;
+	border: dashed #b7b7b7 1px;
+	margin-top: 60px;
+}
+
+/*模态框实线分割线*/
+#msx {
+	width: 100%;
+	border: solid #f7f7f7 1px;
+	margin-top: 20px;
+}
+
+/*模态框评论区图标*/
+#mpl span img {
+	float: left;
+	height: 38px;
+	width: 38px;
+	margin-left: 34px;
+	margin-top: 4px;
+}
+
+/*模态框评论框*/
+#mpl .col-sm-10 {
+	margin-top: 6px;
+	padding-left: 10px;
+}
+
+/*模态框他人评论区*/
+#mtrpl {
+	margin-top: 20px;
+	padding-left: 60px;
+}
+
+#mtrpl .col-sm-12 p {
+	font-size: 22px;
+	font-weight: bold;
+	color: #1e1e1e;
+}
+
+#mtrpl .col-sm-12 .col-sm-1 {
+	width: 40px;
+	padding-left: 0px;
+	border: solid white 1px;
+}
+
+#mtrpl .col-sm-12 .col-sm-1 img {
+	height: 40px;
+	width: 40px;
+	border-radius: 40px;
+}
+
+#mtrpl .col-sm-12 .col-sm-8 {
+	margin-left: 0px;
+	margin-top: 18px;
+	padding-left: 4px;
+}
+
+#mtrpl .col-sm-12 .col-sm-8 #p1 {
+	font-family: 宋体;
+	font-size: 13px;
+	color: #b7b7b7;
+}
+
+#mtrpl .col-sm-12 .col-sm-8 #p2 {
+	font-family: 黑体;
+	font-size: 16px;
+	color: #100749;
+}
+
+/*more*/
+#more a {
+	font-family: Cabliri;
+	font-weight: bold;
+	font-size: 20px;
+	width: 100px;
+	margin-bottom: 80px;
+}
+
+.btn-default {
+	color: #333;
+	background-color: #fff;
+	border-color: #ccc;
+}
+
+.btn-default:hover {
+	color: #333;
+	background-color: #e6e6e6;
+	border-color: #adadad;
+}
+/* **第四个模块结束-骑行故事** */
+
+/* 返回顶部开始 */
+.fanhuidingbu a {
+	display: block;
+	background-color: #c5c5c5;
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	position: fixed;
+	right: 10px;
+	bottom: 121px;
+	z-index: 1000;
+}
+
+.fanhuidingbu, .glyphicon-menu-up {
+	color: #fff;
+	line-height: 30px;
+	text-align: center;
+}
+/* 返回顶部结束 */
+
+/* **主页底部开始** */
+.foot {
+	padding-left: 40px;
+}
+
+.foot1 {
+	padding-top: 20px;
+}
+
+.bbgg {
+	list-style: none;
+	margin-top: -10px;
+	width: 80%;
+}
+
+.bbgg li {
+	color: #c0c0c0;
+	font-size: 15px;
+	padding-top: 10px;
+}
+
+.bbggerweima li:nth-child(2) {
+	margin-left: -15px;
+}
+
+.bbggerweima li:nth-child(3) {
+	margin-left: 15px;
+	padding-left: 30px;
+}
+
+.bbggerweima li:nth-child(3) p {
+	width: 110px;
+}
+
+.bbgg li a {
+	text-decoration: none;
+	color: #c0c0c0;
+}
+
+.bbgg p {
+	color: #c0c0c0;
+	text-align: center;
+}
+
+.foot2 {
+	padding: 10px 20px 10px 15px;
+}
+
+.dibubanquan2 {
+	padding-left: 46px;
+}
+
+.dibubanquan3 {
+	padding-left: 70px;
+}
+
+.foot2 font {
+	line-height: 40px;
+	color: #afafaf;
+}
+/* **主页底部结束** */

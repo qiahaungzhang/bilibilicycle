@@ -1,0 +1,418 @@
+@CHARSET "UTF-8";
+
+/* **样式初始化** */
+.row, .container {
+	margin: 0;
+	padding: 0;
+}
+
+/* **改写bootstrap** */
+@media ( min-width : 768px) {
+	.navbar {
+		border-radius: 0;
+	}
+}
+
+.navbar {
+	position: relative;
+	min-height: 50px;
+	margin-bottom: 0;
+	border: 0px;
+}
+
+.navbar-default {
+	background-color: #000;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #c0c0c0;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus
+	{
+	color: #c0c0c0;
+	background-color: transparent;
+}
+
+.dropdown-menu {
+	background-color: #000;
+}
+
+.dropdown-menu>li>a {
+	color: #fff;
+}
+
+/* **改写bootstrap结束** */
+
+/* **开始头部导航部分** */
+.navbar-right li {
+	font-size: 16px;
+	line-height: 50px;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.navbar-right li a:hover {
+	color: #ffffff;
+}
+
+.dropdown ul li {
+	font-size: 16px;
+	height: 40px;
+	padding-top: 5px;
+}
+
+.dropdown-menu {
+	min-width: 100px;
+}
+
+.dengluanniu li:nth-child(2) {
+	padding-left: 10px;
+}
+
+/*  导航+注册登录     */
+.checkbox {
+	margin-left: 20px;
+}
+
+.btt {
+	cursor: pointer;
+	color: blue;
+	background: white;
+}
+
+.btt:hover {
+	color: blue;
+	text-decoration: underline;
+	background: white;
+}
+
+#font {
+	margin-bottom: 5px;
+}
+
+.form-signin {
+	max-width: 330px;
+	padding: 30px 15px 30px 15px;
+	margin: 0 auto;
+}
+
+.form-signin .checkbox {
+	margin-bottom: 10px;
+}
+
+.form-signin .checkbox {
+	font-weight: normal;
+}
+
+.form-signin .form-control {
+	position: relative;
+	font-size: 16px;
+	height: auto;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.form-signin .form-control:focus {
+	z-index: 2;
+}
+
+.modal-body {
+	padding-top: 0px;
+	padding-bottom: 50px;
+}
+
+.form-signin input[type="text"] {
+	margin-bottom: 14px;
+	border-radius: 0;
+	background: url(../images/login/login_user.png) 0 0 #d9d7d8 no-repeat;
+	padding-left: 60px;
+	color: #FFFFFF;
+}
+
+.form-signin input[type="password"] {
+	margin-bottom: 10px;
+	border-radius: 0;
+	background: url(../images/login/login_pas.png) 0 0 #d9d7d8 no-repeat;
+	padding-left: 60px;
+	color: #FFFFFF;
+}
+
+.form-signin button {
+	border-radius: 0;
+}
+
+#username2 {
+	background: url(../images/login/yzm.jpg) 0 0 #d9d7d8 no-repeat;
+}
+/* **结束头部导航** */
+
+/* **右侧固定** */
+hr {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#box_float {
+	float: left;
+	position: relative;
+	width: 250px;
+	margin-top: 58px;
+}
+
+.div1 {
+	width: 250px;
+	border-left: 1px solid #eee;
+}
+
+.div1 h4 {
+	padding-left: 20px;
+	color: #ff8080;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.div1 h4:hover {
+	text-decoration: underline;
+}
+
+.div1 span {
+	color: #ff8080;
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+.div1 a {
+	color: #ff8080;
+}
+
+.div1 p {
+	padding-left: 20px;
+	color: #8f8f8f;
+	font-family: sans-serif;
+	cursor: pointer;
+	font-family: sans-serif;
+}
+
+.div1 p:hover {
+	text-decoration: underline;
+}
+
+.div1 hr {
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+.div2 {
+	position: fixed;
+	_position: absolute;
+	top: 0px;
+	z-index: 999;
+}
+/* **结束右侧固定** */
+
+/*轮播图片设置*/
+.col-sm-12{
+	padding:0;
+}
+.bicyclelunbo{
+	margin:20px 80px;
+}
+
+.item img {
+	width: 100%;
+	min-height: 380px;
+	max-height: 380px;
+}
+/*banner轮播样式*/
+.first .carousel-caption {
+	background-color: rgba(32, 32, 32, 0.3);
+	position: absolute;
+	right: 0%;
+	bottom: 0%;
+	left: 0%;
+}
+
+.second .carousel-caption {
+	background-color: rgba(32, 32, 32, 0.3);
+	position: absolute;
+	right: 0%;
+	bottom: 0%;
+	left: 0%;
+}
+
+.first .carousel-caption h1, .second .carousel-caption h1 {
+	font-weight: 600;
+	font-size: 34px;
+	margin: 0 20px;
+}
+
+.first a, .second a {
+	text-align: center;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.first a:hover, .second a:hover {
+	cursor: pointer;
+}
+
+.first a h3 {
+	font-weight: 400;
+	font-size: 20px;
+	margin: 0 22px;
+}
+
+.second a h3 {
+	font-weight: 400;
+	font-size: 20px;
+	margin: auto 20px;
+}
+/*轮播图的三个小圆点位置移动*/
+.carousel-indicators {
+	position: absolute;
+	bottom: -5px;
+	left: 50%;
+	z-index: 15;
+	width: 60%;
+	padding-left: 0;
+	margin-left: -30%;
+	text-align: center;
+	list-style: none;
+}
+
+.carousel-control {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 1%;
+	font-size: 20px;
+	padding-left: 150px;
+	text-align: center;
+	background-color: none;
+	text-align: center;
+}
+
+/*banner轮播样式结束*/
+/*轮播结束*/
+/*设置*/
+/*模态框的设置*/
+/*模态框叉号后的分割线设置*/
+#cha {
+	width: 100%;
+	border: solid #f7f7f7 1px;
+}
+/*成姐姐的*/
+.btl {
+	padding-right: 15px;
+}
+
+.col-md-9 hr {
+	margin-top: 0;
+}
+
+.btl h4 {
+	font-size: 16px;
+	line-height: 36px;
+	height: 36px;
+}
+
+.btl h3, h4 {
+	color: #423f3f;
+}
+
+.btl a {
+	color: #423f3f;
+}
+
+/*成姐姐的结束*/
+
+/* bicyclemid */
+.bicyclemid{
+	/* margin-left:80px; */
+}
+
+/*触摸图片时候出现模态框，鼠标变成手抓状*/
+.col-md-4 img:hover {
+	cursor: pointer; /*鼠标移到图片上时，显示手的样式*/
+}
+
+/* ceshipbiaoqian */
+p {
+	orphans: 3;
+	widows: 1;
+}
+/*pannel下面的文字框颜色*/
+.e{
+	background:#e5fae0;
+}
+.a{
+	background:#faf9e0;
+}
+/* **主页底部开始** */
+.dibufoot {
+	background: #000;
+	height: 270px;
+	margin-top: 120px;
+	padding-left: 40px;
+}
+
+.foot1 {
+	padding-top: 20px;
+}
+
+.bbgg {
+	list-style: none;
+	margin-top: -10px;
+	width: 80%;
+}
+
+.bbgg li {
+	color: #c0c0c0;
+	font-size: 15px;
+	padding-top: 10px;
+}
+
+.bbggerweima li:nth-child(2) {
+	margin-left: -15px;
+}
+
+.bbggerweima li:nth-child(3) {
+	margin-left: 15px;
+	padding-left: 30px;
+}
+
+.bbggerweima li:nth-child(3) p {
+	width: 110px;
+}
+
+.bbgg li a {
+	text-decoration: none;
+	color: #c0c0c0;
+}
+
+.bbgg p {
+	color: #c0c0c0;
+	text-align: center;
+}
+
+.foot2 {
+	padding: 10px 20px 10px 15px;
+}
+
+.dibubanquan2 {
+	padding-left: 46px;
+}
+
+.dibubanquan3 {
+	padding-left: 70px;
+}
+
+.foot2 font {
+	line-height: 40px;
+	color: #afafaf;
+}
+/* **主页底部结束** */
