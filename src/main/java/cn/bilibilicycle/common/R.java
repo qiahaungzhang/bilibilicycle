@@ -1,4 +1,4 @@
-package com.common;
+package cn.bilibilicycle.common;
 
 import java.util.HashMap;
 import java.util.Map;

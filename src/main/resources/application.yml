@@ -1,25 +1,15 @@
-#默认使用配置
-spring:
-  profiles:
-    active: dev
-    
-
-#公共配置与profiles选择无关
-mybatis:
-  typeAliasesPackage: com.entity
-  mapperLocations: classpath:mapper/*.xml
-
-
----
-
 #开发配置
 spring:
-  profiles: dev
-
   datasource:
     url: jdbc:mysql://localhost:3306/qishengghuo
     username: root
-    password: 123456
+    password: root
     driver-class-name: com.mysql.jdbc.Driver
 server:
   port: 8011
+
+
+mybatis:
+   configuration:
+      map-underscore-to-camelCase: true
+      mapper-locations: "classpath:mapper/*.xml"

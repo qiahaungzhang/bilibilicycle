@@ -21,26 +21,31 @@
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body">
-        <p class="login-box-msg">用户登录</p>
+        <p class="login-box-msg">用户注册</p>
         <div v-if="error" class="alert alert-danger alert-dismissible">
             <h4 style="margin-bottom: 0px;"><i class="fa fa-exclamation-triangle"></i> {{errorMsg}}</h4>
         </div>
         <div class="form-group has-feedback">
-            <input type="text" class="form-control" v-model="username" placeholder="账号">
+            <input type="text" class="form-control" v-model="username" placeholder="姓名">
             <span class="glyphicon glyphicon-user form-control-feedback"></span>
         </div>
         <div class="form-group has-feedback">
             <input type="password" class="form-control" v-model="password"  placeholder="密码">
             <span class="glyphicon glyphicon-lock form-control-feedback"></span>
         </div>
+        <div class="form-group has-feedback">
+            <input type="password" class="form-control" v-model="school"  placeholder="学校">
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+        </div>
+        <div class="form-group has-feedback">
+            <input type="password" class="form-control" v-model="address"  placeholder="地址">
+            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+        </div>
         <div class="btn-group btn-group-sm">
-            <button type="button" class="btn btn-default" @click="login">登陆</button>
+            <button type="button" class="btn btn-default" @click="javascript :history.back(-1);">返回</button>
             <button type="button" class="btn btn-default" @click="register">注册</button>
 
         </div>
-
-
-        <!-- /.social-auth-links -->
 
     </div>
     <!-- /.login-box-body -->
@@ -54,8 +59,10 @@
         data:{
             username: '',
             password: '',
+            school:'',
+            address:'',
             error: false,
-            errorMsg: '',
+            errorMsg: ''
         },
         beforeCreate: function(){
             if(self != top){
@@ -63,25 +70,22 @@
             }
         },
         methods: {
-            login: function () {
-                var data = "username="+vm.username+"&password="+vm.password;
+            register: function () {
+                var data="username="+vm.username+"&password="+vm.password+"&school="+vm.school+"&address="+vm.address;
                 $.ajax({
                     type: "POST",
-                    url: "sys/login",
+                    url: "sys/register",
                     data: data,
                     dataType: "json",
                     success: function(r){
-                        if(r.code == 0){//登录成功
-                            parent.location.href ='index.html';
+                        if(r.code == 0){//注册成功
+                            parent.location.href ='login.html';
                         }else{
                             vm.error = true;
                             vm.errorMsg = r.msg;
                         }
                     }
                 });
-            },
-            register:function () {
-                parent.location.href ='register.html';
             }
         }
     });
