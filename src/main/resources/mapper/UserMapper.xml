@@ -4,6 +4,5 @@
 
     <select id="queryUserByUserName" resultType="int">
         SELECT COUNT (*) from t_user where username=#{username} and password=#{password}
-
     </select>
 </mapper>
